@@ -1,4 +1,5 @@
 /*--base styles--*/
+/*this is for a grid system only*/
 @charset "utf-8";
 body{
   margin: 0px;
@@ -52,12 +53,12 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
-#mainnav ul {
+nav.primary-nav ul {
     list-style-type: none;
     margin-top: 0px;
     padding: 0px;
 }
-#mainnav a {
+nav.primary-nav a {
     width: 20%;
     display: block;
     float: left;
