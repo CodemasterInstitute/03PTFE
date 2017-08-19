@@ -1,5 +1,6 @@
 //function to show image in lightbox.
 function showImage(e) {
+    'use strict';
     e.preventDefault();
     coverimage.setAttribute("src", this.getAttribute("href"));
     coverimage.setAttribute("alt", this.querySelector("img").getAttribute("alt"));
