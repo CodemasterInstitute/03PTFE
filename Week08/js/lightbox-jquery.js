@@ -1,20 +1,18 @@
-//custom jquery code.
 jQuery(document).ready(function($) {
+
     // global variables for script
     var current, size;
-    $('.lightbox_trigger').click(function(e) {
 
-        //prevent default action (hyperlink)
+    $('.lightboxTrigger').click(function(e) {
+
+        // prevent default click event
         e.preventDefault();
 
-        //Get clicked link href
+        // grab href from clicked element
         var image_href = $(this).attr("href");
 
-        // grab href from clicked element
-        //var image_href = $(this).attr("href");
-
         // determine the index of clicked trigger
-        var slideNum = $('.lightbox_trigger').index(this);
+        var slideNum = $('.lightboxTrigger').index(this);
 
         // find out if #lightbox exists
         if ($('#lightbox').length > 0) {
@@ -37,8 +35,8 @@ jQuery(document).ready(function($) {
             //insert lightbox HTML into page
             $('body').append(lightbox);
 
-            // fill lightbox with .lightbox_trigger hrefs in #imageSet
-            $('#imageSet').find('.lightbox_trigger').each(function() {
+            // fill lightbox with .lightboxTrigger hrefs in #imageSet
+            $('#imageSet').find('.lightboxTrigger').each(function() {
                 var $href = $(this).attr('href');
                 $('#slideshow').append(
                     '<img src="' + $href + '">'
@@ -97,7 +95,7 @@ jQuery(document).ready(function($) {
             }
         }
 
-        // fadeOut current slide, FadeIn next/prev slide
+        // fadeOut curent slide, FadeIn next/prev slide
         $('#slideshow img:eq(' + current + ')').fadeOut(100);
         $('#slideshow img:eq(' + dest + ')').fadeIn(100);
 
