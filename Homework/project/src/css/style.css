@@ -164,7 +164,7 @@ code {
 .menu {
     box-sizing: border-box;
     padding-bottom: 5rem;
-    background: hsl(209, 100%, 10%);
+    background: hsl(209, 100%, 20%);
 }
 
 .menu-header {
