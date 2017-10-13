@@ -1,0 +1,73 @@
+Using the Bayside Beats example from class create a similar page for Perth using the River foreshore as focus. Select some interesting facts about Perth that may be of interest to a visitor to Perth. 
+Some websites to check out for tourist information are:
+Government Tourism Western Australia site - http://www.westernaustralia.com/au/Pages/Welcome_to_Western_Australia.aspx#/
+Perth City Council website - https://www.perth.wa.gov.au/
+Guide to Western  Australia - http://www.australia.com/en/places/wa.html
+WA Holiday - http://www.waholidayguide.com.au/explore-wa
+
+Instructions
+
+1. Ensure that the meta tag for the view port is correct by including the initial scale as shown here: 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+2. Now we will create the body of the page. Start with a div tag to wrap the contents of the page we are building. 
+3. Create the basic structure for the navigation structure for the site. This should include:
+home page 
+places to visit
+places to eat
+things to do
+Where to stay and
+contact page
+We will add these pages as the weeks go by. 
+<header id="top">
+        <h1>Riverside Beat</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="thispage">Home</a></li>
+                <li><a href="sightseeing.html">Sightseeing</a></li>
+                <li><a href="#">Eating Out</a></li>
+                <li><a href="#">What's On</a></li>
+                <li><a href="#">Where to Stay</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+4. Create the structure for a hero section that will highlight why people should visit the Perth Riverside.
+  <div class="hero">
+        <article>
+            <h2>Be Where It&rsquo;s At</h2>
+            <p>
+               copy goes here
+            </p>
+        </article>
+        <img src=""  alt=""/> 
+</div>
+
+Pixabay.com has images of Perth and there are plenty through a search for "Perth, WA Images". Be aware of copyright though. Ensure that you can reuse them. Images should be an absolute URL linking to the image location on the web.
+
+5. Create two sections so that we have a main area and a sidebar.
+<section class="col-1">    
+   <article">
+      <h2>Article title here</h2>
+      <p>Information about Free Cat buses and where they run from</p>
+      <p>second paragraph if needed</p>
+      <figure class="centered"><img src="" width="400" height="266"  alt=""/>
+            <figcaption>caption for image</figcaption>
+      </figure>
+       <p>3rd paragraph as needed</p>
+   </article>
+</section>
+<section class="col-2"
+    <aside class="sidebar">
+        <h2>Article title here</h2>
+        <p>Tips on how to get to various attractions around town using CAT Buses</p>
+        <p>2nd paragraph if needed</p>
+    </aside>
+</section>
+
+6. Now create the footer so that you have a copyright statement.
+    <footer>
+        <p>&copy; Copyright 2017 Riverside Beat</p>
+    </footer>
+
+This completes the homework for Lesson 1
